@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tebak Karakter Free Fire (Full)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 Tebak Karakter Free Fire (Full) 🔥</h1>
+
+    <div id="meta">
+      <div id="score-box">Skor: <span id="score">0</span></div>
+      <div id="progress-box">Soal: <span id="progress">1</span> / <span id="total">20</span></div>
+    </div>
+
+    <div class="game-card">
+      <img id="char-img" src="images/placeholder.jpg" alt="Karakter" class="char-img" />
+
+      <p id="clue" class="clue">Clue akan muncul di sini...</p>
+
+      <input id="answer" type="text" placeholder="Masukkan nama karakter..." autocomplete="off" />
+      <button id="check-btn">✔ Cek Jawaban</button>
+
+      <p id="result"></p>
+
+      <div class="controls">
+        <button id="next-btn" class="hidden">➡ Karakter Selanjutnya</button>
+        <button id="restart-btn" class="hidden">🔄 Main Lagi</button>
+      </div>
+    </div>
+
+    <footer>
+      <small>Upload gambar karakter ke folder <code>images/</code> (nama file: lowercase, tanpa spasi, mis. <code>kelly.jpg</code>)</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
